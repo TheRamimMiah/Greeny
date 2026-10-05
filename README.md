@@ -1,16 +1,55 @@
-# React + Vite
+# 🌱 Greeny — Sustainable Community Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Greeny is a modern, responsive sustainability website built with **React** and **Tailwind CSS**. The website focuses on tree planting, environmental projects, community impact, and sustainable development.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Fully responsive design
+- Mobile, tablet, and desktop support
+- Modern editorial-style interface
+- Smooth scrolling
+- Scroll reveal animations
+- Interactive navigation menu
+- Programs slider
+- Community stories slider
+- FAQ accordion
+- Awards and recognition section
+- Interactive hover effects
+- Newsletter subscription UI
+- Back-to-top button
+- Responsive image sections
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Tailwind CSS
+- Vite
+- JavaScript
+- Lucide React
 
-## Expanding the ESLint configuration
+## 📁 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+src/
+├── App.jsx
+├── main.jsx
+├── index.css
+│
+├── components/
+│   ├── Navbar.jsx
+│   ├── HeroSection.jsx
+│   ├── AboutSection.jsx
+│   ├── ProgramsSection.jsx
+│   ├── RecognitionSection.jsx
+│   ├── TrustSection.jsx
+│   ├── StoriesSection.jsx
+│   ├── FAQSection.jsx
+│   ├── Footer.jsx
+│   ├── Reveal.jsx
+│   └── SectionLabel.jsx
+│
+└── assets/
+    ├── green-cities.png
+    ├── small-contribution.jpg
+    └── empowering-local-communities.png
+```
