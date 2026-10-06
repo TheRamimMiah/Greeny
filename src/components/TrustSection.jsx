@@ -1,4 +1,5 @@
 import { ArrowUpRight, ShieldCheck } from "lucide-react";
+import { Link } from "react-router-dom";
 import Reveal from "./Reveal";
 import SectionLabel from "./SectionLabel";
 
@@ -52,9 +53,9 @@ export default function TrustSection() {
         >
           <div className="absolute inset-0 bg-black/3" />
 
-          {/* CARDS IN ONE ROW */}
+          {/* Cards */}
           <div className="relative z-10 grid grid-cols-1 gap-5 md:grid-cols-3 lg:gap-6">
-            {cards.map((card) => (
+            {cards.map((card, index) => (
               <article
                 key={card.title}
                 className="group flex min-h-97.5 flex-col rounded-3xl border border-white/60 bg-white/65 p-6 shadow-[0_15px_45px_rgba(0,0,0,0.08)] backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:bg-white/80 sm:p-7"
@@ -70,16 +71,40 @@ export default function TrustSection() {
                 </p>
 
                 <div className="mt-auto pt-8">
-                  <a
-                    href="#faq"
-                    className="group/link inline-flex items-center gap-2 rounded-xl border border-black/15 bg-white/80 px-4 py-2.5 text-xs font-medium transition-all duration-300 hover:bg-black hover:text-white"
-                  >
-                    Read More
-                    <ArrowUpRight
-                      size={12}
-                      className="transition-transform duration-300 group-hover/link:translate-x-1"
-                    />
-                  </a>
+                  {index === 0 ? (
+                    <Link
+                      to="/insights/verified-projects"
+                      className="group/link inline-flex items-center gap-2 rounded-xl border border-black/15 bg-white/80 px-4 py-2.5 text-xs font-medium transition-all duration-300 hover:bg-black hover:text-white"
+                    >
+                      Read More
+                      <ArrowUpRight
+                        size={12}
+                        className="transition-transform duration-300 group-hover/link:translate-x-1"
+                      />
+                    </Link>
+                  ) : index === 1 ? (
+                    <Link
+                      to="/insights/planting-maps"
+                      className="group/link inline-flex items-center gap-2 rounded-xl border border-black/15 bg-white/80 px-4 py-2.5 text-xs font-medium transition-all duration-300 hover:bg-black hover:text-white"
+                    >
+                      Read More
+                      <ArrowUpRight
+                        size={12}
+                        className="transition-transform duration-300 group-hover/link:translate-x-1"
+                      />
+                    </Link>
+                  ) : (
+                    <Link
+                      to="/insights/collaboration-tools"
+                      className="group/link inline-flex items-center gap-2 rounded-xl border border-black/15 bg-white/80 px-4 py-2.5 text-xs font-medium transition-all duration-300 hover:bg-black hover:text-white"
+                    >
+                      Read More
+                      <ArrowUpRight
+                        size={12}
+                        className="transition-transform duration-300 group-hover/link:translate-x-1"
+                      />
+                    </Link>
+                  )}
                 </div>
               </article>
             ))}

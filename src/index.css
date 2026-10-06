@@ -55,3 +55,25 @@ button {
         scroll-behavior: auto !important;
     }
 }
+
+@keyframes treeFloat {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+@keyframes treeSway {
+  0%,
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateX(4px) rotate(1deg);
+  }
+}
